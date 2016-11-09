@@ -1,11 +1,17 @@
 body {
   font-family: "Roboto";
+  margin: 0;
 }
 
 .clear-fix {
   clear: both;
 }
 
+
+#container {
+  width: 100%;
+  height: auto;
+}
 
 /* HEADER SECTION START*/
 
@@ -47,18 +53,18 @@ body {
 
 /* HEADER SECTION END */
 
-/* MAIN SCREEN START */
+/* MAIN SECTION START */
 
 #main-screen {
   
   min-height: 100%;
   min-width: 1280px;
 
-  position: fixed;
-  height: 100%;
+  position: relative;
+  height: 500px;
   width: auto;
   
-  top: 100px;
+  top: -50px;
   left: 0;
   
   background: url('http://jasonnatividad.com/images/codingo-screen.jpeg') no-repeat center center;
@@ -76,8 +82,24 @@ body {
 }
 .web-dev {
   color: white;
-  
+  position: relative;
+  top: 25%;
   font-size: 50px;
   text-align: center;
   
 }
+
+/*  MAIN SECTION END*/
+
+/* ABOUT SECTION START */
+
+#about {
+  /*position: relative;*/
+  /*visibility: hidden;*/
+  width: 100%;
+  height: auto;
+  color: black;
+  background-color: white;
+}
+
+/* ABOUT SECTION END */
