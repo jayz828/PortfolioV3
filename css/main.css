@@ -59,7 +59,7 @@ body {
 
 #main-screen {
 
-  margin-top: 2em;
+  margin-top: 0.9em;
   /*min-height: 100%;*/
   width: 100%;
  
@@ -121,6 +121,40 @@ body {
   background: #1F2C37;
   width: 100%;
   height: 500px;
+  color: white;
+
+
+}
+
+    #about-me h1 {
+        padding: 1em;
+        margin: 0;
+        margin-right: 5em;
+        float: right;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 3em;
+        letter-spacing: 8px;
+       
+    }
+
+#who-am-i {
+  width: 40%;
+  float: right;
+  margin-right: 3em;
+  line-height: 1.8em;
+  margin-top: -10em;
+
+}
+
+#photo {
+  width: 30%;
+  background: white;
+  height: 300px;
+  padding-top: 1em;
+  float: left;
+  position: relative;
+  top: 25%;
+  left: 10%;
 
 
 }
