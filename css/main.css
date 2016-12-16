@@ -158,3 +158,53 @@ body {
 
 
 }
+
+#portfolio {
+  height: 500px;
+  width: 100%;
+  background: white;
+  text-align: center;
+
+}
+
+
+
+  #portfolio h1 {
+    font-size: 4em;
+    letter-spacing: 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+  }
+
+
+
+  .portfolio-tile {
+    height: 40%;
+    width: 15%;
+    background: #45ABE0;
+    float: left;
+    margin-left: 3em;
+    color: white;
+    letter-spacing: 3px;
+  }
+
+  .portfolio-tile:nth-of-type(2) {
+    background: #EB9039;
+  }
+
+  .portfolio-tile:nth-of-type(3) {
+    background: #F4CC31;
+  }
+
+  .portfolio-tile:nth-of-type(4) {
+    background: #EC6451;
+  }
+
+  .portfolio-tile:nth-of-type(5) {
+    background: #33B875;
+  }
+
+    .portfolio-tile img{
+      height: 50%;
+
+    }
