@@ -1,7 +1,8 @@
 
 body, html {
 
-   width: 1280px;
+  /*Width changed to 100% from 1280px, to remove horizontal scroll bars*/
+   width: 100%;
    margin: 0;
 
 }
@@ -208,3 +209,11 @@ body {
       height: 50%;
 
     }
+
+#contact {
+  height: 300px;
+  width: 100%;
+  background: #1F2C37;
+  text-align: center;
+  color: white;
+}
