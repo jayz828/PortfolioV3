@@ -47,12 +47,26 @@ body {
   list-style: none;
 }
 
-.menu-list li {
-    display: inline;
-    padding: 10px;
+  .menu-list li {
+      display: inline;
+      padding: 10px;
 
 
-}
+
+    }
+
+    .menu-list a {
+      text-decoration: none;
+    }
+
+
+    /*  Unsure if it is possible to select mutliple psuedo selectors - need to research */
+    .menu-list a:link {
+      color: black;
+    }
+    .menu-list a:visited {
+      color: black;
+    }
 
 /* HEADER SECTION END */
 
@@ -216,4 +230,31 @@ body {
   background: #1F2C37;
   text-align: center;
   color: white;
+
+}
+
+  #contact i {
+    margin-top: 10%;
+    letter-spacing: 0.5em;
+  }
+  #contact p {
+    margin-top: 5em;
+  }
+
+  #contact a:link {
+    color: white;
+  }
+
+  #contact a:visited {
+    color: white;
+  }
+
+#contact-links {
+
+}
+
+#twitter-feed {
+/*  position: relative;
+  top: 1em;
+  right: -10em;*/
 }
