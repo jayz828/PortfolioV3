@@ -173,7 +173,11 @@ img {
 
 #main-menu {
   float: right;
+<<<<<<< HEAD
   margin-top: 15px;
+=======
+  margin-right: 1em;
+>>>>>>> 1d3bce2faa7a52dfa9c3572119b17f5ba0e9eb86
 }
 
 #logo {
@@ -274,8 +278,13 @@ img {
 #about-me {
 
   background: #1F2C37;
+<<<<<<< HEAD
   /*width: 100%;*/
   height: 500px;
+=======
+  width: 100%;
+  height: 600px;
+>>>>>>> 1d3bce2faa7a52dfa9c3572119b17f5ba0e9eb86
   color: white;
 
 
