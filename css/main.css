@@ -1,19 +1,149 @@
 
-body, html {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  ----====* END CSS RESET *====---- */
+
+
+
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+html {
 
   /*Width changed to 100% from 1280px, to remove horizontal scroll bars*/
    width: 100%;
-   margin: 0;
+   font-family: "Roboto","Helvetica","Arial", "sans-serif";
+   height: 100%;
+
+   /*font: 100%/1.5em; */
+
 
 }
 
 body {
-  font-family: "Roboto";
+  /*font-family: "Roboto";*/
+}
+
+ /* Flexible Images */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .clear-fix {
   clear: both;
 }
+
+
+/*  FLUID GRIDS */
+.row {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+.container .columns{
+  float: left;
+  padding-right: 1em;
+  padding-left: 1em;
+  /*background: /*tomato*/;*/
+
+}
+
+
+    .container .columns.one,    
+    .container .columns.two,    
+    .container .columns.three,    
+    .container .columns.four,     
+    .container .columns.five,     
+    .container .columns.six,    
+    .container .columns.seven,    
+    .container .columns.eight,    
+    .container .columns.nine,     
+    .container .columns.ten,    
+    .container .columns.eleven,     
+    .container .columns.twelve,   
+    .container .columns.thirteen,   
+    .container .columns.fourteen,   
+    .container .columns.fiftbeen,   
+    .container .columns.sixteen   { width: 100%;  }
+
+.container {
+  width: 100%;
+}
+
+.clearfix:after,
+.container:after {
+  content: '';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+.clearfix,
+.container {
+  zoom: 1;
+}
+
 
 
 /* HEADER SECTION START*/
@@ -22,20 +152,28 @@ body {
 
 }
 
+    #logo a:link,#logo a:visited {
+        color: black;
+    }
+
+
 #logo img {
   height: 80px;
   width: auto;
   float: left;
 }
 
-#logo h2 {
+#logo h1 {
   float: left;
+  font-size: 2em;
+  font-weight: bold;
   padding: 10px;
 }
 
 
 #main-menu {
   float: right;
+  margin-top: 15px;
 }
 
 #logo {
@@ -61,12 +199,10 @@ body {
 
 
     /*  Unsure if it is possible to select mutliple psuedo selectors - need to research */
-    .menu-list a:link {
+    .menu-list a:link, .menu-list a:visited {
       color: black;
     }
-    .menu-list a:visited {
-      color: black;
-    }
+
 
 /* HEADER SECTION END */
 
@@ -76,11 +212,13 @@ body {
 
   margin-top: 0.9em;
   /*min-height: 100%;*/
-  width: 100%;
+  /*width: 100%;*/
  
 
 /*  position: absolute;*/
   height: 400px;
+
+
 /*  line-height: 500px;*/
 
   
@@ -88,8 +226,7 @@ body {
   left: 0;*/
   
   background: url('http://jasonnatividad.com/images/codingo-screen.jpeg') no-repeat center center;
-  
- background-size: cover;
+  background-size: cover;
 
   
 /*   background: url('../images/bg-portfolio.jpg') no-repeat center center; */
@@ -115,16 +252,19 @@ body {
   
   
   text-align: center;
-     width: 640px; /*can be in percentage also.*/
-    height: auto;
-    margin: 0 auto;
-    padding: 10px;
-    position: relative;
+  width: 640px; /*can be in percentage also.*/
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 5em;
 
-
-  
+  /*position: relative;*/
 }
 
+  #web-dev h1 {
+    font-size: 5.0em;
+    margin-top: 10%;
+  }
   #web-dev h2 {
     font-size: 3.5em;
   }
@@ -134,7 +274,7 @@ body {
 #about-me {
 
   background: #1F2C37;
-  width: 100%;
+  /*width: 100%;*/
   height: 500px;
   color: white;
 
@@ -142,8 +282,8 @@ body {
 }
 
     #about-me h1 {
-        padding: 1em;
-        margin: 0;
+        /*padding: 1em;*/
+        margin-top: 10%;
         margin-right: 5em;
         float: right;
         font-family: 'Open Sans Condensed', sans-serif;
@@ -153,23 +293,27 @@ body {
     }
 
 #who-am-i {
-  width: 40%;
+  /*width: 40%;*/
   float: right;
+  margin-top: 1em;
   margin-right: 3em;
   line-height: 1.8em;
-  margin-top: -10em;
+  font-size: 1.1em;
+  /*margin-top: -10em;*/
 
 }
 
 #photo {
-  width: 30%;
+  width: 75%;
   background: white;
   height: 300px;
+  margin-top: 10%;
+  margin-left: 10%;
   padding-top: 1em;
   float: left;
-  position: relative;
+/*  position: relative;
   top: 25%;
-  left: 10%;
+  left: 10%;*/
 
 
 }
@@ -185,6 +329,7 @@ body {
 
 
   #portfolio h1 {
+    margin-top: 5%;
     font-size: 4em;
     letter-spacing: 15px;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -195,12 +340,13 @@ body {
 
   .portfolio-tile {
     height: 40%;
-    width: 15%;
+    width: 20%;
     background: #45ABE0;
     float: left;
     margin-left: 3em;
     color: white;
     letter-spacing: 3px;
+    margin-top: 5%;
   }
 
   .portfolio-tile:nth-of-type(2) {
@@ -258,3 +404,94 @@ body {
   top: 1em;
   right: -10em;*/
 }
+
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 450px) {
+
+    body {
+      font-size: 1em; /* 16 / 16 */
+      line-height: 1.5em;
+    }
+
+
+
+    .container .columns.one     { width: 6.25%; }
+    .container .columns.two     { width: 12.5%; }
+    .container .columns.three     { width: 18.75%;  }
+    .container .columns.four    { width: 25%;   }
+    .container .columns.five    { width: 31.25%;  }
+    .container .columns.six     { width: 37.5%; }
+    .container .columns.seven     { width: 43.75%;  }
+    .container .columns.eight     { width: 50%;   }
+    .container .columns.nine    { width: 56.25%;  }
+    .container .columns.ten     { width: 62.5%; }
+    .container .columns.eleven    { width: 68.75%;  }
+    .container .columns.twelve    { width: 75%;   }
+    .container .columns.thirteen  { width: 81.25%;  }
+    .container .columns.fourteen  { width: 87.5%; }
+    .container .columns.fiftbeen  { width: 93.75%;  }
+    .container .columns.sixteen   { width: 100%;  }
+
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .columns.banner {
+      padding-bottom: 30%;
+      /*background:url('../img/photodune-tea-bag.jpg') no-repeat center center;*/
+      background-size: cover;
+    }
+
+
+/*    .columns.banner {
+      padding-bottom: 0;
+      background: none;
+    }*/
+
+    .container .featured-section .four {
+      width: 50%;
+    }
+
+    .container .featured-section .four:nth-child(3) {
+      clear: both;
+
+    } 
+
+
+}
+
+@media only screen and (min-width: 720px) {
+    
+
+    .container .featured-section .four {
+      width: 25%;
+    }
+
+    .container .featured-section .four:nth-child(3) {
+      clear: none;
+
+    } 
+}
+
+
+@media only screen and (min-width: 900px) {
+    
+
+    .container .four {
+      width: 25%;
+    }
+
+    .container .four:nth-child(3) {
+      clear: none;
+
+    } 
+
+    .featured-section .four {
+      margin: 2em 0;
+    }
+
+
+}
+

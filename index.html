@@ -9,7 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/main.css">
@@ -21,28 +22,32 @@
 
 <body>
 	
+<div class="container"> 
+
 
 
 <header id="main">
 
-  <div id="logo">
 
-    <img src="http://jasonnatividad.com/images/jnlogo.jpg" alt="letters jn inside a circle" />
 
-    <h2>Jason Natividad</h2>
-    
+    <div id="logo">
+        <a href="http://jasonnatividad.com">
+          <img src="http://jasonnatividad.com/images/jnlogo.jpg" alt="letters jn inside a circle" />
 
-  </div>
+          <h1>Jason Natividad</h1>
+        </a>
 
-  <nav id="main-menu">
-    <ul class="menu-list">
-      <li><a href="#about-me">// ABOUT</a></li>
-      <li><a href="#portfolio">// PORTFOLIO</a></li>
-      <li><a href="http://blog.jasonnatividad.com">// BLOG</a></li>
-      <li><a href=""></a>// RESUME</li>
-      <li><a href="#contact">// CONTACT</a></li>
-    </ul>
-  </nav>
+    </div>
+
+    <nav id="main-menu">
+      <ul class="menu-list">
+        <li><a href="#about-me">// ABOUT</a></li>
+        <li><a href="#portfolio">// PORTFOLIO</a></li>
+        <li><a href="http://blog.jasonnatividad.com">// BLOG</a></li>
+        <li><a href=""></a>// RESUME</li>
+        <li><a href="#contact">// CONTACT</a></li>
+      </ul>
+    </nav>
 
 </header>
 
@@ -52,9 +57,14 @@
 <section id="main-screen">
     
   <div id="web-dev">
-	  <h1 id="name">Jason Natividad</h1>
-	  <h2>Web Developer</h2>
-  </div>
+    <div class="row">
+      <div class="columns sixteen">
+    	  <h1 id="name">Jason Natividad</h1>
+    	  <h2>Web Developer</h2>
+      </div>
+    </div> <!-- /row -->
+  </div>  
+
 </section>
 
 <div class="clear-fix"></div>
@@ -62,57 +72,84 @@
 
 <section id="about-me">
 
-	<h1>I'M JASON</h1>
 
-	<div id="photo">
-		
-	</div>
-	<div class="clear-fix"></div>
+  <div class="row">
 
-	<div id="who-am-i">
-		<p>Hello! I'm a web developer based in San Diego, California. I just recently received my Associates Degree in Computer Information Systems from Coleman University. I still consider myself a beginner, but have been working on getting more experience. I just started working on the Free Code Camp curriculum and trying to work my way through it. As I go through the course I will add more of the projects that I have completed from there and any other personal projects I might do.
-		</p>
-	</div>
+      <div class="columns eight">
+          <div id="photo">
+            
+          </div>
+      </div>
+    	
+      <div class="columns eight">
+          <h1>I'M JASON</h1>
 
-	
+        	<div id="who-am-i">
+        		<p>Hello! I'm a web developer based in San Diego, California. I just recently received my Associates Degree in Computer Information Systems from Coleman University. I still consider myself a beginner, but have been working on getting more experience. I just started working on the Free Code Camp curriculum and trying to work my way through it. As I go through the course I will add more of the projects that I have completed from there and any other personal projects I might do.
+        		</p>
+        	</div>
+      </div>
+
+
+
+	</div>  <!-- /row -->
+
 </section>
 
 <section id="portfolio">
 
-    <h1>PORTFOLIO</h1>
-  
+    <div class="row">
+        <div class="columns sixteen">
+          <h1>PORTFOLIO</h1>
+        </div>
+    </div> <!-- /row -->
 
 
-        <div class="portfolio-tile">
+
+    <div class="row">
+
+        
+            <div class="portfolio-tile">
+              
+              <p>Quote Machine</p>
+              <img src="images/quote-machine.png" alt="">
           
-          <p>Quote Machine</p>
-          <img src="images/quote-machine.png" alt="">
-        </div>
+            </div>
+    
+        
+        
+            </div><div class="portfolio-tile columns four">
+              <p>Tribute Page</p>
+              <img src="images/tribute.png" alt="">
+            </div>
+    
 
-        <div class="portfolio-tile">
-          <p>Tribute Page</p>
-          <img src="images/tribute.png" alt="">
-        </div>
+        
+            <div class="portfolio-tile columns four">
+              <p>Calculator</p>
+              <img src="images/calculator.png" alt="">
+            </div>
+        
 
-        <div class="portfolio-tile">
-          <p>Calculator</p>
-          <img src="images/calculator.png" alt="">
-        </div>
+      
+            <div class="portfolio-tile columns four">
+                <p>Weather App</p>
+            </div>
+      
 
-        <div class="portfolio-tile">
-            <p>Weather App</p>
-        </div>
+       
+            <div class="portfolio-tile">
+                <p>Pomodoro Clock</p>
+            </div>
 
-        <div class="portfolio-tile">
-            <p>Pomodoro Clock</p>
-        </div>
 
+    </div> <!-- /row -->
 
 
 </section>
 
 
-<section id="contact">
+<footer id="contact">
 
 
   <div id="contact-links">
@@ -144,7 +181,9 @@
 
 
   <p>&copy 2016 - All Rights Reserved</p>
-</section>
+</footer>
 
+
+</div>  <!-- /container -->
 
 </html>
