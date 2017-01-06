@@ -1,15 +1,20 @@
 
 
-var testBtn = document.getElementById('test-btn');
+var hamburger = document.getElementById('hamburger');
 
-testBtn.addEventListener('click', executeCode);
+hamburger.addEventListener("click", function(){alert('test'); });
 
 
-function executeCode(){
+// var testBtn = document.getElementById('test-btn');
 
-	// alert('test');
-	var aboutDiv = document.getElementById('about');
+// testBtn.addEventListener('click', executeCode);
 
-	aboutDiv.setAttribute('style', 'visibility: hidden');
 
-}
+// function executeCode(){
+
+// 	// alert('test');
+// 	var aboutDiv = document.getElementById('about');
+
+// 	aboutDiv.setAttribute('style', 'visibility: hidden');
+
+// }

@@ -184,29 +184,16 @@ img {
   float: left;
 }
 
+
 .menu-list {
-  text-decoration: none;
-  list-style: none;
+    /*visibility: hidden;*/
+    display: none;
+
 }
 
-  .menu-list li {
-      display: inline;
-      padding: 10px;
-
-
-
-    }
-
-    .menu-list a {
-      text-decoration: none;
-    }
-
-
-    /*  Unsure if it is possible to select mutliple psuedo selectors - need to research */
-    .menu-list a:link, .menu-list a:visited {
-      color: black;
-    }
-
+#hamburger {
+  float: right;
+}
 
 /* HEADER SECTION END */
 
@@ -430,6 +417,41 @@ img {
 
 
 /* MEDIA QUERIES */
+
+@media only screen and (min-width: 582px) {
+  
+  .menu-list {
+      text-decoration: none;
+      list-style: none;
+  }
+
+    .menu-list li {
+        display: inline;
+        padding: 10px;
+  }
+
+    .menu-list a {
+        text-decoration: none;
+    }
+
+
+    /*  Unsure if it is possible to select mutliple psuedo selectors - need to research */
+    .menu-list a:link, .menu-list a:visited {
+      color: black;
+    }
+
+
+  .menu-list {
+    /*visibility: visible;*/
+    display: inline;
+  }
+
+  #hamburger {
+    visibility: hidden;
+    float: none;
+  }
+}
+
 @media only screen and (min-width: 885px) {
 
     body {
@@ -439,6 +461,19 @@ img {
 
     #about-me {
       height: 500px;
+    }
+
+    #web-dev h1 {
+      font-size: 3em;
+    }
+
+    #web-dev h2 {
+      font-size: 2.5em;
+    }
+
+    #about-me h1{
+      font-size: 2em;
+      
     }
 
 
@@ -500,7 +535,7 @@ img {
     }
 
     #web-dev h2 {
-      font-size: 3.5em;
+      font-size: 3em;
     }
 
     #about-me h1{
