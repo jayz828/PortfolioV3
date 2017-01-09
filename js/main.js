@@ -10,6 +10,7 @@ hamburger.addEventListener("click", openMenu);
 
 	// variables for menu use
 	var header = document.getElementById('main');
+	var hamburgerMenu = document.getElementById('hamburger-main-menu');
 	var menuState = "";
 
 function openMenu(){
@@ -24,12 +25,14 @@ function openMenu(){
 
 	if ((menuState == "") || (menuState == "closed")){
 		menuState = "open";
-		header.style.height = "500px";
+		hamburgerMenu.style.display = "block";
+		header.style.height = "300px";
 
 	}
 	else {
 		// alert('test');
 		menuState = "closed";
+		hamburgerMenu.style.display = "none";
 		header.style.height = "100px";
 	}
 

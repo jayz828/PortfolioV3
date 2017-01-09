@@ -180,20 +180,39 @@ img {
   margin-right: 1em;
 }
 
+
 #logo {
   float: left;
 }
 
 
 .menu-list {
-    /*visibility: hidden;*/
     display: none;
 
 }
 
+
+
 #hamburger {
   float: right;
 }
+
+#hamburger-main-menu {
+  display: none;
+  text-align: center;
+}
+
+  #hamburger-main-menu li{
+      margin-top: 1em;
+  }
+
+  #hamburger-main-menu a{
+      text-decoration: none;
+  }
+
+    .hamburger-menu-list a:link, .hamburger-menu-list a:visited {
+        color: black;
+    }
 
 /* HEADER SECTION END */
 
@@ -451,6 +470,10 @@ img {
     visibility: hidden;
     float: none;
   }
+
+  #hamburger-main-menu {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 885px) {
@@ -463,6 +486,9 @@ img {
     #logo h1 {
       font-size: 2em;
     }
+
+
+
 
     #about-me {
       height: 500px;
